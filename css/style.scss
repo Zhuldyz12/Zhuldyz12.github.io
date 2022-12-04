@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+$color: #ffffff;
+
+#content {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    #content {
+        display: block;
+    }
+}
+
+body,
+body a {
+    font-family: 'Source Code Pro', monospace;
+    color: black;
+    background-color: $color;
+    letter-spacing: -0.5px;
+    margin: 0;
+    padding: 0;
+}
+
+
+%blocks {
+    text-align: left;
+}
+
+div {
+    @extend %blocks;
+
+    h3 {
+        font-size: 20px;
+        margin: 8px 0px;
+    }
+
+    h4 {
+        font-size: 15px;
+        margin: 8px 0px;
+    }
+
+}
+
+.year {
+    @extend %blocks;
+    font-size: 15px;
+    margin: 8px 0px;
+}
+
+ul {
+    h4 {
+        font-weight: 600;
+    }
+}
+
+p {
+    font-size: 7 px;
+}
+
+.dropbtn{
+    background-color: white;
+    color: black;
+    font-size:  px;
+    border: none;
+    margin: 15 px;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus{
+    background-color: burlywood;
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: wheat;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+.dropdown-content a:hover{
+    background-color: #ddd;
+}
+.show{
+    display: block;
+}
